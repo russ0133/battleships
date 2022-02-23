@@ -2,9 +2,7 @@ const NOT_HIT = 0;
 const CORRECT_HIT = 1;
 const INVALID_HIT = 2;
 export default class Ship {
-  constructor(x, y, length = 1, isSunk = false, isHit = []) {
-    this.x = x;
-    this.y = y;
+  constructor(length = 1, isSunk = false, isHit = []) {
     this.length = length;
     this.isSunk = isSunk;
     this.isHit = isHit;

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --mode=development --open",
     "build": "export NODE_ENV=production && webpack",
-    "test": "jest --verbose false --maxWorkers=50%"
+    "test": "jest --verbose false --maxWorkers=50% --watch"
   },
   "repository": {
     "type": "git",
