@@ -3,7 +3,7 @@ const NOT_HIT = 0;
 const VALID_HIT = 1;
 const INVALID_HIT = 2;
 
-// TODO: add 'sorientation' parameter so ships can be created in a vertical orientation. check for hits etc.
+// TODO: add 'orientation' parameter so ships can be created in a vertical orientation. check for hits etc.
 export default class Gameboard {
   constructor(boardX = Array(24), boardY = []) {
     this.boardX = boardX;
