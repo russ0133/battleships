@@ -1,1 +1,1 @@
-window.prompt("hello");
+import "./style.css";

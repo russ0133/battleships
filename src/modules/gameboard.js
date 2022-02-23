@@ -5,12 +5,12 @@ const INVALID_HIT = 2;
 
 // TODO: add 'orientation' parameter so ships can be created in a vertical orientation. check for hits etc.
 export default class Gameboard {
-  constructor(boardX = Array(24), boardY = []) {
-    this.boardX = boardX;
+  constructor(boardY = []) {
+    this.boardX = Array(12).fill(NOT_HIT);
     this.boardY = boardY;
   }
   createShip(x, length) {
-    let createdShip = new Ship(this.boardX, this.boardY, length);
+    let createdShip = new Ship(length);
     let board = this.boardX;
     for (let i = 0; i < createdShip.length; i++) {
       board[x + i] = createdShip;
@@ -25,6 +25,9 @@ export default class Gameboard {
       this.boardX[x] = INVALID_HIT;
       return INVALID_HIT;
     }
+  }
+  getHitStatus(x) {
+    return this.boardX[x];
   }
   isGameOver() {
     let isOver = true;
