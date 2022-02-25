@@ -46,7 +46,7 @@ test("Falsely check if the game is Over", () => {
   expect(game.isGameOver()).toBe(false);
 });
 
-test("AI can correctly attack another player gameboard", () => {
+it("AI can correctly attack another player gameboard", () => {
   let playerHuman = new Player();
   let playerComputer = new Player(false);
   playerHuman.gameboard.createShip(3, 2);

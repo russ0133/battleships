@@ -1,6 +1,3 @@
-const NOT_HIT = 0;
-const CORRECT_HIT = 1;
-const INVALID_HIT = 2;
 export default class Ship {
   constructor(length = 1, isSunk = false, isHit = []) {
     this.length = length;

@@ -7,7 +7,7 @@ const INVALID_HIT = 2;
 export default class Gameboard {
   constructor(boardY = []) {
     this.boardX = Array(12).fill(NOT_HIT);
-    this.boardY = boardY;
+    this.boardY = Array(12).fill(NOT_HIT);
   }
   createShip(x, length) {
     let createdShip = new Ship(length);
