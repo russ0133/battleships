@@ -11,7 +11,19 @@ const grid = document.querySelector("#grid-master");
 
 for (let i = 0; i < playerTwo.gameboard.boardX.length; i++) {
   const gridItem = document.createElement("div");
-  gridItem.innerText = `Element ${i}`;
+  gridItem.innerText = `col ${i}`;
+  gridItem.classList.add("bg-red-500");
+  grid.appendChild(gridItem);
+  console.log("heya");
+}
+for (
+  let i = 0;
+  i < playerTwo.gameboard.boardX.length * playerTwo.gameboard.boardY.length;
+  i++
+) {
+  let gridItem = document.createElement("div");
+  gridItem.innerText = `row ${i}`;
+  gridItem.classList.add("bg-violet-700");
   grid.appendChild(gridItem);
   console.log("heya");
 }
